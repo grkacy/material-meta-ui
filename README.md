@@ -1,13 +1,13 @@
 #material-meta-ui
 
-AngularJS direcive amd a sample application for the automated UI forms generation.
+AngularJS directive and a sample application for the automated UI forms generation.
 
 The automated generation is JSON metadata driven and the generated UI forms are based on Angular Material.
 
 
 ## Code Example
 
-In the cotroller:
+In the controller:
 
 ```javascript
 $scope.sampleMetadata = [
@@ -54,7 +54,7 @@ This approach could be used in conjunction with auto generation of corresponding
 
 This approach is especially handy where extensive and numerous settings forms are needed or when we want quickly to prototype a UI.
 
-This project is a stab at this use case using AngulaJS and Anular Material.
+This project is a stab at this use case using AngularJS and Angular Material.
 
 ## Installation
 
@@ -227,7 +227,7 @@ This is still bit of a toy but if time allows I am planing to grow it
 
 ## Tech
 
-The followowing open source technologies are used here
+The following open source technologies are used here
 
 * [AngularJS] - HTML enhanced for web apps!
 * [Angular Material] - great UI framework for modern web apps
