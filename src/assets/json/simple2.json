@@ -1,0 +1,33 @@
+[
+    {
+        "id": "turbo",
+        "widget": "checkbox",
+        "label": "Turbo Enabled",
+        "value": false,
+        "tooltip": "Enables the turbo engine",
+        "icon": "fa fa-rocket fa-lg"
+    },
+
+    {
+        "widget": "divider"
+    },
+
+    {
+        "widget": "subheader",
+        "label": "Boosters"
+    },
+
+    {
+        "id": "rearBooter",
+        "widget": "switch",
+        "label": "Rear Booster",
+        "tooltip": "Rear Nitro Booster"
+    },
+
+    {
+        "id": "bottomBooster",
+        "widget": "switch",
+        "label": "Bottom Booster",
+        "tooltip": "Bottom Nitro Booster"
+    }
+]

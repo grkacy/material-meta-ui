@@ -1,0 +1,26 @@
+[
+    {
+        "id": "name",
+        "widget": "textfield",
+        "label": "Employee"
+    },
+    {
+        "id": "purpose",
+        "widget": "textfield",
+        "label": "Purpose"
+    },
+    {
+        "id": "startDate",
+        "widget": "datepicker",
+        "label": "Start Date :",
+        "label-left": true,
+        "tooltip": "Start Date"
+    },
+    {
+        "id": "endDate",
+        "widget": "datepicker",
+        "label": "End Date :",
+        "label-left": true,
+        "tooltip": "Start Date"
+    }
+]

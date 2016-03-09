@@ -1,0 +1,10 @@
+[
+    {
+        "id": "turbo",
+        "widget": "checkbox",
+        "label": "Turbo Enabled",
+        "value": false,
+        "tooltip": "Enables the turbo nitro engine",
+        "icon": "fa fa-rocket fa-lg"
+    }
+]

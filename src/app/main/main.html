@@ -1,0 +1,55 @@
+<div layout="row" style="min-height:100vh" layout-fill>
+
+    <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
+
+        <md-toolbar layout="row" class="md-whiteframe-z1 md-hue-2">
+            <h1 class="md-toolbar-tools">Sample App</h1>
+        </md-toolbar>
+
+        <md-content class="md-padding" flex layout="column" layout-align="start">
+            <md-list>
+                <md-subheader class="md-no-sticky">Actions</md-subheader>
+
+                <md-list-item ng-click="vm.closeSidenav()" ng-repeat="it in vm.menuItems" ui-sref-active="md-warn"
+                              ui-sref="{{it.sref}}" class="md-accent">
+                    <i class="material-icons md-48">{{it.icon}}</i>
+
+                    <p style="padding-left: 10px;"> {{ it.name }} </p>
+                </md-list-item>
+
+                <md-divider></md-divider>
+
+                <md-list-item ng-href="https://github.com/grkacy" ui-sref-active="md-warn">
+                    <i class="material-icons md-36">help</i>
+
+                    <p style="padding-left: 10px;"> Help & Feedback</p>
+                </md-list-item>
+            </md-list>
+        </md-content>
+    </md-sidenav>
+
+
+    <div flex layout="column" tabIndex="-1" role="main" class="md-whiteframe-z2">
+        <md-toolbar scroll-shrink layout="row" md-accent class="md-whiteframe-z1 md-hue-2">
+            <div class="md-toolbar-tools">
+                <md-button class="menu md-icon-button" hide-gt-sm tabindex="-1" ng-click="vm.toggleSidenav()"
+                           aria-label="Show Menu">
+                    <md-icon md-font-icon="fa fa-bars fa-2x"></md-icon>
+                </md-button>
+
+                <span flex></span>
+            </div>
+
+            <div style="padding-top: 6px; padding-right: 8px;">
+                <a href="https://github.com/grkacy">
+                    <img height="52" src="../assets/images/legoman-100x100.jpg">
+                </a>
+            </div>
+
+        </md-toolbar>
+
+        <md-content flex id="content" class="md-padding" ui-view>
+        </md-content>
+    </div>
+
+</div>

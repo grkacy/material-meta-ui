@@ -1,0 +1,80 @@
+[
+    {
+        "id": "name",
+        "widget": "textfield",
+        "label": "Datacenter Name",
+        "label-left": true,
+        "value": "",
+        "tooltip": "The name of our datacenter",
+        "icon": "fa fa-building fa-lg"
+    },
+
+    {
+        "id": "public",
+        "widget": "select",
+        "label": "Access",
+        "label-left" : true,
+        "options": [
+            "Public",
+            "Private"
+        ],
+        "value": "Public",
+        "tooltip": "Private or Public Datacenter",
+        "icon": "fa fa-eye fa-lg"
+    },
+
+    {
+        "id": "region",
+        "widget": "select",
+        "label": "Region",
+        "label-left" : true,
+        "options": [
+            "Oregon",
+            "California",
+            "New York"
+        ],
+        "tooltip": "Geographical Region",
+        "icon": "fa fa-globe fa-lg"
+    },
+
+    {
+        "widget": "divider"
+    },
+
+    {
+        "widget": "subheader",
+        "label": "Admin Credentials"
+    },
+
+    {
+        "id": "user",
+        "widget": "textfield",
+        "label": "Username",
+        "label-left": true,
+        "value": "",
+        "icon": "fa fa-user fa-lg"
+    },
+
+    {
+        "id": "password",
+        "widget": "textfield",
+        "type": "password",
+        "label": "Password",
+        "label-left": true,
+        "value": "",
+        "icon": "fa fa-lock fa-lg"
+    },
+
+    {
+        "widget": "divider"
+    },
+
+    {
+        "id": "enabled",
+        "widget": "checkbox",
+        "label": "Enabled",
+        "value": true,
+        "tooltip": "Datacenter visible to our system"
+    }
+
+]

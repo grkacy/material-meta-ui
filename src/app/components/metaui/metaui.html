@@ -1,0 +1,76 @@
+<md-list ng-cloak>
+    <div ng-repeat="el in uiMetadata">
+
+        <md-subheader ng-if="el.widget === 'subheader'" class="md-no-sticky">{{el.label}}</md-subheader>
+
+        <md-divider ng-if="el.widget === 'divider'"></md-divider>
+
+        <md-list-item ng-if="el.widget === 'textfield'">
+            <md-icon md-font-icon="{{el.icon}}" ng-if="el.icon"></md-icon>
+
+            <p ng-if="el['label-left']">{{el.label}}
+                <md-tooltip md-direction="bottom" ng-if="el.tooltip">
+                    {{el.tooltip}}
+                </md-tooltip>
+            </p>
+            <md-input-container>
+                <label ng-if="!el['label-left']">{{el.label}}</label>
+                <input ng-model="model[el.id]" aria-label={{el.label}}
+                       style="{{getFieldWidthStyle(el)}}"
+                       type={{el.type}}>
+
+            </md-input-container>
+        </md-list-item>
+
+        <md-list-item ng-if="el.widget === 'checkbox'">
+            <md-icon md-font-icon="{{el.icon}}" ng-if="el.icon"></md-icon>
+            <p>{{el.label}}
+                <md-tooltip md-direction="bottom" ng-if="el.tooltip">
+                    {{el.tooltip}}
+                </md-tooltip>
+            </p>
+            <md-checkbox class="md-secondary md-warn" ng-model="model[el.id]"></md-checkbox>
+        </md-list-item>
+
+        <md-list-item ng-if="el.widget === 'switch'">
+
+            <md-icon md-font-icon="{{el.icon}}" ng-if="el.icon"></md-icon>
+            <p>{{el.label}}
+                <md-tooltip md-direction="bottom" ng-if="el.tooltip">
+                    {{el.tooltip}}
+                </md-tooltip>
+            </p>
+            <md-switch class="md-secondary md-warn" ng-model="model[el.id]"></md-switch>
+        </md-list-item>
+
+        <md-list-item ng-if="el.widget === 'select'">
+            <md-icon md-font-icon="{{el.icon}}" ng-if="el.icon"></md-icon>
+            <p ng-if="el['label-left']">{{el.label}}
+                <md-tooltip md-direction="bottom" ng-if="el.tooltip">
+                    {{el.tooltip}}
+                </md-tooltip>
+            </p>
+            <md-input-container>
+                <label ng-if="!el['label-left']">{{el.label}}</label>
+                <md-select ng-model="model[el.id]" aria-label={{el.label}} style={{getFieldWidthStyle(el)}}>
+                    <md-option ng-repeat="option in el.options" value="{{option}}">
+                        {{option}}
+                    </md-option>
+                </md-select>
+            </md-input-container>
+        </md-list-item>
+
+        <md-list-item ng-if="el.widget === 'datepicker'">
+            <md-icon md-font-icon="{{el.icon}}" ng-if="el.icon"></md-icon>
+            <p ng-if="el['label-left']">{{el.label}}
+                <md-tooltip md-direction="bottom" ng-if="el.tooltip">
+                    {{el.tooltip}}
+                </md-tooltip>
+            </p>
+
+            <md-datepicker ng-model="model[el.id]"
+                           md-placeholder="{{el['label-left'] ? '' : el.label}}">
+            </md-datepicker>
+        </md-list-item>
+    </div>
+</md-list>

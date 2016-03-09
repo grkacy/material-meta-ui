@@ -1,0 +1,90 @@
+[
+    {
+        "widget": "subheader",
+        "label": "General"
+    },
+    {
+        "id": "texfield1",
+        "widget": "textfield",
+        "label": "Text Field",
+        "label-left": true,
+        "value": "TEST",
+        "tooltip": "This is a text field",
+        "width": "300px"
+    },
+    {
+        "widget": "divider"
+    },
+    {
+        "id": "textfield2",
+        "widget": "textfield",
+        "label": "Another Text Field",
+        "tooltip": "Standard Material text field"
+    },
+    {
+        "id": "textfield3",
+        "widget": "textfield",
+        "type": "password",
+        "label": "Password Field",
+        "tooltip": "Password text field"
+    },
+    {
+        "widget": "divider"
+    },
+    {
+        "id": "checkbox1",
+        "widget": "checkbox",
+        "label": "Check Box",
+        "value": true,
+        "tooltip": "This is a checkbox",
+        "icon": "fa fa-eye fa-lg"
+    },
+    {
+        "id": "switch1",
+        "widget": "switch",
+        "label": "Switch",
+        "tooltip": "This is a awitch",
+        "icon": "fa fa-star fa-lg"
+    },
+    {
+        "widget": "divider"
+    },
+    {
+        "id": "select1",
+        "widget": "select",
+        "label": "Select",
+        "label-left": true,
+        "width": "150px",
+        "options": [
+            "Option 1",
+            "Option 2",
+            "Option 3",
+            "Option 4"
+        ],
+        "value": "Option 1",
+        "tooltip": "This is an example of pull down choice"
+    },
+    {
+        "id": "datepicker1",
+        "widget": "datepicker",
+        "label": "Some Date",
+        "label-left": true,
+        "tooltip": "This is a date picker "
+    },
+    {
+        "widget": "divider"
+    },
+    {
+        "id": "select2",
+        "widget": "select",
+        "label": "Select",
+        "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+        ],
+        "value": "Option B",
+        "tooltip": "This is another example of pull down choice"
+    }
+]

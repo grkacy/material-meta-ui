@@ -1,0 +1,70 @@
+<div class="w-100" layout-align="center start" layout-gt-md="row" layout-xs="column" class="md-padding">
+
+    <md-content flex flex-xs="100" flex-gt-md="60" class="md-whiteframe-z1 no-overflow-x">
+
+        <md-toolbar class="md-toolbar-tools md-hue-2">
+
+            <h1>Metadata Editor</h1>
+
+            <span flex></span>
+
+            <md-menu>
+                <md-button aria-label="Right Menu" class="md-icon-button md-raised md-warn" ng-click="$mdOpenMenu($event)">
+                    <i class="material-icons">folder</i>
+                    <md-tooltip md-direction="bottom">
+                        Opens a sample UI Metadata Template
+                    </md-tooltip>
+                </md-button>
+                <md-menu-content width="8">
+                    <md-menu-item ng-repeat="el in vm.templates">
+                        <md-button ng-click="vm.openTemplate(el.file)">{{el.name}}</md-button>
+                    </md-menu-item>
+                </md-menu-content>
+            </md-menu>
+
+            <md-button class="md-icon-button md-raised md-warn" ng-click="vm.updateMetadata()"
+                       aria-label="Test Metadata" ng-disabled="vm.uiMetaData.length === 0">
+                <i class="material-icons">play_arrow</i>
+                <md-tooltip md-direction="bottom">
+                    Renders the UI based on the Metadata
+                </md-tooltip>
+            </md-button>
+
+            <md-button class="md-icon-button md-raised md-warn" ng-click="vm.updateFormData()"
+                    aria-label="Show Form Data" ng-disabled="vm.uiMetaData.length === 0">
+                <i class="material-icons">description</i>
+                <md-tooltip md-direction="bottom">
+                    Displays the updated form JSON data
+                </md-tooltip>
+            </md-button>
+        </md-toolbar>
+
+        <div id="metadataEditor"></div>
+    </md-content>
+
+    <div class="pad-rig-15"></div>
+
+    <div flex flex-xs="100" flex-gt-md="40">
+
+        <md-content class="md-whiteframe-2dp no-overflow-x">
+
+            <md-toolbar class="md-toolbar-tools md-accent">
+                <h1>Generated UI</h1>
+            </md-toolbar>
+
+            <gkc-meta-ui metadata="vm.uiMetaData" model="vm.valueObj"></gkc-meta-ui>
+
+        </md-content>
+
+        <div class="pad-top-15"></div>
+
+        <md-content class="md-whiteframe-2dp">
+            <md-toolbar class="md-toolbar-tools md-hue-2">
+                <h1>Value Object</h1>
+            </md-toolbar>
+            <div id="dataViewer"></div>
+        </md-content>
+
+    </div>
+
+</div>
