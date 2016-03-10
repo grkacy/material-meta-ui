@@ -35,7 +35,7 @@ and the corresponding html:
 
 would yield the following UI form:
 
-![Simple Form Screenshot](https://raw.githubusercontent.com/grkacy/material-meta-ui/master/doc/images/simpleform.png)
+![Simple Form Screenshot](docs/images/simpleform.png)
 
 The data representing the form (*valueObj*) after user types 'Greg' and clicks the checkbox will look as follows:
 
@@ -74,6 +74,9 @@ This will open the sample application.
 
 The sample application has two sections. First section shows the simple usage of the directive.
 The second section - 'UI Builder' is a builder app allowing to quickly create sample forms.
+
+![Builder Screenshot](docs/images/builder.png)
+
 
 ## API Reference
 
