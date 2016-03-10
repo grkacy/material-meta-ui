@@ -4,6 +4,7 @@ AngularJS directive and a sample application for the automated UI forms generati
 
 The automated generation is JSON metadata driven and the generated UI forms are based on Angular Material.
 
+[LIVE DEMO](http://gwavesolutions.com/greg/github/material-meta-ui)
 
 ## Code Example
 

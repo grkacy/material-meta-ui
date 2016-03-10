@@ -51,7 +51,7 @@
 
         function openTemplate(name) {
             $log.debug("Opening " + name);
-            $http.get(sprintf('../assets/json/%s', name)).then(function (response) {
+            $http.get(sprintf('assets/json/%s', name)).then(function (response) {
                 $log.debug('Metadata:', response.data);
                 editor.setValue(angular.toJson(response.data, 2), -1);
                 vm.valueObj = {};
