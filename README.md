@@ -35,7 +35,7 @@ and the corresponding html:
 
 would yield the following UI form:
 
-**WILL BE ADDED SHORTLY**
+![Simple Form Screenshot](https://raw.githubusercontent.com/grkacy/material-meta-ui/master/doc/images/simpleform.png)
 
 The data representing the form (*valueObj*) after user types 'Greg' and clicks the checkbox will look as follows:
 
